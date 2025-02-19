@@ -1,0 +1,30 @@
+@import "./mixins";
+@import "_variables.scss";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+
+    a{
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    ul{
+        list-style: none;
+    }
+    button{
+        cursor: pointer;
+        border: none;
+    }
+    
+}
