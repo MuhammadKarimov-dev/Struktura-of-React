@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# 🚀 Struktura Loyihasi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Loyihaning tavsifi
 
-Currently, two official plugins are available:
+**Struktura** — bu React va Vite yordamida yaratilgan zamonaviy veb-ilova bo‘lib, `react-router-dom` orqali sahifalar orasida marshrutizatsiya (routing) qilish imkoniyatiga ega.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠 O‘rnatish
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Loyihani ishga tushirish uchun quyidagi bosqichlarni bajaring:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1️⃣ Reponi klonlash
+```sh
+git clone https://github.com/username/struktura.git
+cd struktura
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2️⃣ Kerakli bog‘liqliklarni o‘rnatish
+```sh
+npm install
 ```
+
+Agar `pnpm` ishlatayotgan bo‘lsangiz:
+```sh
+pnpm install
+```
+
+### 3️⃣ Loyihani ishga tushirish
+```sh
+npm run dev
+```
+
+Yoki `pnpm` orqali:
+```sh
+pnpm run dev
+```
+
+Brauzerda ochish uchun:
+```
+http://localhost:5173
+```
+
+---
+
+## ✨ Imkoniyatlar
+
+✅ **React Router** — Ilova ichida sahifalar o‘rtasida tezkor harakatlanish imkoniyati.
+
+✅ **Vite** — Tezkor va samarali frontend rivojlantirish muhitidan foydalanish.
+
+✅ **Modulli Tuzilma** — Kodingizni tartibli va kengaytirish oson bo‘lishi uchun modullar orqali ajratilgan.
+
+✅ **Global SASS Stil** — Loyihada **SASS** orqali styling boshqariladi.
+
+✅ **404 Sahifa** — Noto‘g‘ri URL kiritilganda maxsus sahifa ko‘rsatiladi.
+
+---
+
+## 📂 Loyiha Tuzilishi
+```
+struktura/
+├── src/
+│   ├── pages/
+│   │   ├── HomePage/
+│   │   │   ├── Home.tsx
+│   │   ├── IncorrectPage/
+│   │   │   ├── IncorrectPage.tsx
+│   ├── view/
+│   ├── styles/
+│   │   ├── global.scss
+│   ├── routes.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+```
+
+---
+
+## 📞 Aloqa
+Agar savollaringiz bo‘lsa yoki loyihaga o‘z hissangizni qo‘shmoqchi bo‘lsangiz, GitHub orqali biz bilan bog‘laning! 😊
+
