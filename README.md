@@ -12,7 +12,7 @@ Loyihani ishga tushirish uchun quyidagi bosqichlarni bajaring:
 
 ### 1️⃣ Reponi klonlash
 ```sh
-git clone https://github.com/username/struktura.git
+git clone https://github.com/MuhammadKarimov-dev/Struktura-of-React.git
 cd struktura
 ```
 
